@@ -6,7 +6,12 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "不明（神功皇后の創建伝承）",
-"m": "坐摩大神（生井神・福井神・綱長井神・阿須波神・波比岐神）"
+"m": "坐摩大神（生井神・福井神・綱長井神・阿須波神・波比岐神）",
+"ne": "Ikasuri Shrine",
+"ae": "Watanabe 3, Kyutaromachi 4-chome, Chuo-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Grand Shrine",
+"ce": "Unknown (traditionally founded by Empress Jingu)",
+"me": "Ikasuri-no-Okami (Ikui, Fukui, Tsunagai, Asuha and Hahiki deities)"
 },
 {
 "n": "坐摩神社行宮",
@@ -15,7 +20,10 @@ var SHRINES = [
 "r": "坐摩神社の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ikasuri Shrine Angu (temporary shrine)",
+"ae": "Ishimachi, Chuo-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "高津宮",
@@ -24,7 +32,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "866年（貞観8年）",
-"m": ""
+"m": "",
+"ne": "Kozu-gu Shrine",
+"ae": "1-1-29 Kozu, Chuo-ku, Osaka",
+"ce": "866 (Jogan 8)"
 },
 {
 "n": "少彦名神社",
@@ -33,7 +44,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Sukunahikona Shrine",
+"ae": "2-1-8 Doshomachi, Chuo-ku, Osaka"
 },
 {
 "n": "玉造稲荷神社",
@@ -42,7 +55,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "紀元前12年（伝承）",
-"m": ""
+"m": "",
+"ne": "Tamatsukuri Inari Shrine",
+"ae": "2-3-8 Tamatsukuri, Chuo-ku, Osaka",
+"ce": "12 BC (traditional account)"
 },
 {
 "n": "豊國神社",
@@ -51,7 +67,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Toyokuni Shrine",
+"ae": "2-1 Osakajo, Chuo-ku, Osaka"
 },
 {
 "n": "御津宮",
@@ -60,7 +78,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Mitsu-gu Shrine",
+"ae": "2-10-7 Nishi-Shinsaibashi, Chuo-ku, Osaka"
 },
 {
 "n": "鵲森宮",
@@ -69,7 +89,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kasasagimori-no-miya Shrine",
+"ae": "1-14-4 Morinomiya-Chuo, Chuo-ku, Osaka"
 },
 {
 "n": "御霊神社",
@@ -78,7 +100,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Goryo Shrine",
+"ae": "4-4-3 Awajimachi, Chuo-ku, Osaka"
 },
 {
 "n": "難波神社",
@@ -87,7 +111,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "反正天皇の時代（伝承）",
-"m": ""
+"m": "",
+"ne": "Namba Shrine",
+"ae": "4-1-3 Bakurocho, Chuo-ku, Osaka",
+"ce": "Reign of Emperor Hanzei (traditional account)"
 },
 {
 "n": "茨住吉神社",
@@ -96,7 +123,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ibara Sumiyoshi Shrine",
+"ae": "1-1-17 Kujo, Nishi-ku, Osaka"
 },
 {
 "n": "土佐稲荷神社",
@@ -105,7 +134,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tosa Inari Shrine",
+"ae": "4-9-7 Kita-Horie, Nishi-ku, Osaka"
 },
 {
 "n": "楠永神社",
@@ -114,7 +145,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "1928年（昭和3年）ごろ",
-"m": "楠永大神・楠玉大神"
+"m": "楠永大神・楠玉大神",
+"ne": "Kusunaga Shrine",
+"ae": "2-1 Utsubo-Honmachi, Nishi-ku, Osaka",
+"ce": "Around 1928 (Showa 3)",
+"me": "Kusunaga-no-Okami and Kusutama-no-Okami"
 },
 {
 "n": "サムハラ神社",
@@ -123,7 +158,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Samuhara Shrine",
+"ae": "2-5-26 Itachibori, Nishi-ku, Osaka"
 },
 {
 "n": "熊野大神宮",
@@ -132,7 +169,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kumano Dai-jingu Shrine",
+"ae": "4-16-48 Oimazato, Higashinari-ku, Osaka"
 },
 {
 "n": "熊野大神宮御旅所",
@@ -141,7 +180,10 @@ var SHRINES = [
 "r": "熊野大神宮の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kumano Dai-jingu Otabisho (procession rest site)",
+"ae": "Higashi-Imazato, Higashinari-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "八王子神社",
@@ -150,7 +192,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hachioji Shrine",
+"ae": "4-2-48 Nakamoto, Higashinari-ku, Osaka"
 },
 {
 "n": "八王子神社御旅所",
@@ -159,7 +203,10 @@ var SHRINES = [
 "r": "八王子神社の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hachioji Shrine Otabisho (procession rest site)",
+"ae": "Oimazato, Higashinari-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "比賣許曽神社",
@@ -168,7 +215,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": "下照比売命"
+"m": "下照比売命",
+"ne": "Himekoso Shrine",
+"ae": "3-8-14 Higashi-Obashi, Higashinari-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Myojin Taisha",
+"me": "Shitateruhime-no-Mikoto"
 },
 {
 "n": "八阪神社",
@@ -177,7 +228,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yasaka Shrine",
+"ae": "4-8-20 Nakamichi, Higashinari-ku, Osaka"
 },
 {
 "n": "深江稲荷神社",
@@ -186,7 +239,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Fukae Inari Shrine",
+"ae": "3-16-17 Fukae-Minami, Higashinari-ku, Osaka"
 },
 {
 "n": "三社神社",
@@ -195,7 +250,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Sansha Shrine",
+"ae": "2-18-23 Isoji, Minato-ku, Osaka"
 },
 {
 "n": "三津神社",
@@ -204,7 +261,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Mitsu Shrine",
+"ae": "2-6-11 Yunagi, Minato-ku, Osaka"
 },
 {
 "n": "三先天満宮",
@@ -213,7 +272,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Misaki Tenmangu Shrine",
+"ae": "1-5-40 Misaki, Minato-ku, Osaka"
 },
 {
 "n": "福崎住吉神社",
@@ -222,7 +283,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Fukuzaki Sumiyoshi Shrine",
+"ae": "1-1-39 Fukuzaki, Minato-ku, Osaka"
 },
 {
 "n": "湊屋住吉神社",
@@ -231,7 +294,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Minatoya Sumiyoshi Shrine",
+"ae": "2-8-4 Ikejima, Minato-ku, Osaka"
 },
 {
 "n": "産土神社",
@@ -240,7 +305,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ubusuna Shrine",
+"ae": "3-13-28 Shimaya, Konohana-ku, Osaka"
 },
 {
 "n": "四貫島住吉神社",
@@ -249,7 +316,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shikanjima Sumiyoshi Shrine",
+"ae": "3-14-16 Umeka, Konohana-ku, Osaka"
 },
 {
 "n": "朝日神明社",
@@ -258,7 +327,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Asahi Shinmeisha Shrine",
+"ae": "1-6-21 Kasugade-Naka, Konohana-ku, Osaka"
 },
 {
 "n": "鴉宮",
@@ -267,7 +338,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Karasu-no-miya Shrine",
+"ae": "2-10-18 Denpo, Konohana-ku, Osaka"
 },
 {
 "n": "澪標住吉神社",
@@ -276,7 +349,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Miotsukushi Sumiyoshi Shrine",
+"ae": "3-1-6 Denpo, Konohana-ku, Osaka"
 },
 {
 "n": "西九条神社",
@@ -285,7 +360,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Nishikujo Shrine",
+"ae": "1-4-20 Nishikujo, Konohana-ku, Osaka"
 },
 {
 "n": "大阪天満宮",
@@ -294,7 +371,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "949年（天暦3年）",
-"m": "菅原道真"
+"m": "菅原道真",
+"ne": "Osaka Tenmangu Shrine",
+"ae": "2-1-8 Tenjinbashi, Kita-ku, Osaka",
+"ce": "949 (Tenryaku 3)",
+"me": "Sugawara no Michizane"
 },
 {
 "n": "天満宮行宮",
@@ -303,7 +384,10 @@ var SHRINES = [
 "r": "大阪天満宮の行宮（所属は要確認）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tenmangu Angu (temporary shrine)",
+"ae": "Chiyozaki, Nishi-ku, Osaka (street number unconfirmed)",
+"re": "Angu (temporary shrine) of {P} (affiliation to be confirmed)"
 },
 {
 "n": "堀川戎神社",
@@ -312,7 +396,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Horikawa Ebisu Shrine",
+"ae": "5-4-17 Nishitenma, Kita-ku, Osaka"
 },
 {
 "n": "露天神社",
@@ -321,7 +407,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tsuyunoten Shrine (Ohatsu Tenjin)",
+"ae": "2-5-4 Sonezaki, Kita-ku, Osaka"
 },
 {
 "n": "豊崎神社",
@@ -330,7 +418,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Toyosaki Shrine",
+"ae": "6-6-4 Toyosaki, Kita-ku, Osaka"
 },
 {
 "n": "綱敷天神社",
@@ -339,7 +429,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tsunashiki Tenjin Shrine",
+"ae": "9-11 Kamiyamacho, Kita-ku, Osaka"
 },
 {
 "n": "綱敷天神社御旅所",
@@ -348,7 +440,10 @@ var SHRINES = [
 "r": "綱敷天神社の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tsunashiki Tenjin Shrine Otabisho (procession rest site)",
+"ae": "Chayamachi, Kita-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "長柄八幡宮",
@@ -357,7 +452,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Nagara Hachimangu Shrine",
+"ae": "3-3-1 Nagara-Naka, Kita-ku, Osaka"
 },
 {
 "n": "富島神社",
@@ -366,7 +463,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tomishima Shrine",
+"ae": "2-5-10 Nakatsu, Kita-ku, Osaka"
 },
 {
 "n": "大仁八阪神社",
@@ -375,7 +474,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Oni Yasaka Shrine",
+"ae": "3-1-23 Oyodo-Naka, Kita-ku, Osaka"
 },
 {
 "n": "素盞烏尊神社",
@@ -384,7 +485,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Susanoo-no-Mikoto Shrine",
+"ae": "3-3-25 Oyodo-Minami, Kita-ku, Osaka"
 },
 {
 "n": "淀川天神社",
@@ -393,7 +496,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yodogawa Tenjin Shrine",
+"ae": "1-4-1 Kokubunji, Kita-ku, Osaka"
 },
 {
 "n": "南長柄八幡宮",
@@ -402,7 +507,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Minami-Nagara Hachimangu Shrine",
+"ae": "1-4-25 Nagara-Naka, Kita-ku, Osaka"
 },
 {
 "n": "野田恵美須神社",
@@ -411,7 +518,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Noda Ebisu Shrine",
+"ae": "4-1-1 Tamagawa, Fukushima-ku, Osaka"
 },
 {
 "n": "福島天満宮",
@@ -420,7 +529,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Fukushima Tenmangu Shrine",
+"ae": "2-8-1 Fukushima, Fukushima-ku, Osaka"
 },
 {
 "n": "海老江八坂神社",
@@ -429,7 +540,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ebie Yasaka Shrine",
+"ae": "6-4-2 Ebie, Fukushima-ku, Osaka"
 },
 {
 "n": "天神社",
@@ -438,7 +551,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tenjin Shrine",
+"ae": "1-4-5 Tamagawa, Fukushima-ku, Osaka"
 },
 {
 "n": "春日神社",
@@ -447,7 +562,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kasuga Shrine",
+"ae": "2-2-7 Tamagawa, Fukushima-ku, Osaka"
 },
 {
 "n": "神津神社",
@@ -456,7 +573,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kamitsu Shrine",
+"ae": "2-6-39 Juso-Higashi, Yodogawa-ku, Osaka"
 },
 {
 "n": "香具波志神社",
@@ -465,7 +584,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kaguhashi Shrine",
+"ae": "4-4-20 Kashima, Yodogawa-ku, Osaka"
 },
 {
 "n": "蒲田神社",
@@ -474,7 +595,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kamata Shrine",
+"ae": "2-18-12 Higashi-Mikuni, Yodogawa-ku, Osaka"
 },
 {
 "n": "塚本神社",
@@ -483,7 +606,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tsukamoto Shrine",
+"ae": "2-2-7 Tsukamoto, Yodogawa-ku, Osaka"
 },
 {
 "n": "野里住吉神社",
@@ -492,7 +617,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "1382年（永徳2年）",
-"m": "住吉大神"
+"m": "住吉大神",
+"ne": "Nozato Sumiyoshi Shrine",
+"ae": "1-15-12 Nozato, Nishiyodogawa-ku, Osaka",
+"ce": "1382 (Eitoku 2)",
+"me": "Sumiyoshi-no-Okami"
 },
 {
 "n": "田蓑神社",
@@ -501,7 +630,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "869年（貞観3年）",
-"m": "住吉四神"
+"m": "住吉四神",
+"ne": "Tamino Shrine",
+"ae": "1-18-14 Tsukuda, Nishiyodogawa-ku, Osaka",
+"ce": "869 (Jogan 3)",
+"me": "The four Sumiyoshi deities"
 },
 {
 "n": "姫嶋神社",
@@ -510,7 +643,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": "阿迦留姫命・住吉大神"
+"m": "阿迦留姫命・住吉大神",
+"ne": "Himejima Shrine",
+"ae": "4-14-2 Himejima, Nishiyodogawa-ku, Osaka",
+"me": "Akaruhime-no-Mikoto and Sumiyoshi-no-Okami"
 },
 {
 "n": "大和田住吉神社",
@@ -519,7 +655,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "842年（承和9年）（一説に1313年）",
-"m": "住吉四神"
+"m": "住吉四神",
+"ne": "Owada Sumiyoshi Shrine",
+"ae": "5-20-20 Owada, Nishiyodogawa-ku, Osaka",
+"ce": "842 (Jowa 9); another account says 1313",
+"me": "The four Sumiyoshi deities"
 },
 {
 "n": "鼻川神社",
@@ -528,7 +668,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "800年（資料の記載。元号と年が合わないため要確認）",
-"m": "神功皇后・須佐之男命"
+"m": "神功皇后・須佐之男命",
+"ne": "Hanakawa Shrine",
+"ae": "2-1-12 Hanakawa, Nishiyodogawa-ku, Osaka",
+"ce": "800 (as stated in a source; the era name and year do not match, to be confirmed)",
+"me": "Empress Jingu and Susanoo-no-Mikoto"
 },
 {
 "n": "鼻川神社御旅所",
@@ -537,7 +681,10 @@ var SHRINES = [
 "r": "鼻川神社の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hanakawa Shrine Otabisho (procession rest site)",
+"ae": "Kashiwazato, Nishiyodogawa-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "五社神社",
@@ -546,7 +693,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "1688年（元禄元年）",
-"m": "天照大御神・住吉大神・須佐之男命・豊受大神・火之迦具土神"
+"m": "天照大御神・住吉大神・須佐之男命・豊受大神・火之迦具土神",
+"ne": "Gosha Shrine",
+"ae": "1-2-8 Nakajima, Nishiyodogawa-ku, Osaka",
+"ce": "1688 (Genroku 1)",
+"me": "Amaterasu-Omikami, Sumiyoshi-no-Okami, Susanoo-no-Mikoto, Toyouke-no-Okami and Hinokagutsuchi-no-Kami"
 },
 {
 "n": "住吉神社",
@@ -555,7 +706,11 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "1644年（正保元年）",
-"m": "住吉四神"
+"m": "住吉四神",
+"ne": "Sumiyoshi Shrine",
+"ae": "1-3-98 Momojima, Nishiyodogawa-ku, Osaka",
+"ce": "1644 (Shoho 1)",
+"me": "The four Sumiyoshi deities"
 },
 {
 "n": "櫻宮",
@@ -564,7 +719,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Sakuranomiya Shrine",
+"ae": "1-12-32 Nakanocho, Miyakojima-ku, Osaka"
 },
 {
 "n": "櫻宮御旅所",
@@ -573,7 +730,10 @@ var SHRINES = [
 "r": "櫻宮の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Sakuranomiya Otabisho (procession rest site)",
+"ae": "Zengenjicho, Miyakojima-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "都島神社",
@@ -582,7 +742,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Miyakojima Shrine",
+"ae": "1-5-5 Hondori, Miyakojima-ku, Osaka"
 },
 {
 "n": "淀川神社",
@@ -591,7 +753,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yodogawa Shrine",
+"ae": "1-2-11 Kemacho, Miyakojima-ku, Osaka"
 },
 {
 "n": "大宮神社",
@@ -600,7 +764,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Omiya Shrine",
+"ae": "3-1-37 Omiya, Asahi-ku, Osaka"
 },
 {
 "n": "八幡大神宮",
@@ -609,7 +775,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hachiman Daijingu Shrine",
+"ae": "3-20-19 Shimizu, Asahi-ku, Osaka"
 },
 {
 "n": "日吉神社",
@@ -618,7 +786,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hiyoshi Shrine",
+"ae": "4-19-13 Akagawa, Asahi-ku, Osaka"
 },
 {
 "n": "八剱神社",
@@ -627,7 +797,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yatsurugi Shrine",
+"ae": "3-31-8 Shigino-Higashi, Joto-ku, Osaka"
 },
 {
 "n": "皇大神宮",
@@ -636,7 +808,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kotai Jingu Shrine",
+"ae": "2-12-31 Imafuku-Minami, Joto-ku, Osaka"
 },
 {
 "n": "白山神社",
@@ -645,7 +819,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hakusan Shrine",
+"ae": "2-3-15 Nakahama, Joto-ku, Osaka"
 },
 {
 "n": "野江水神社",
@@ -654,7 +830,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Noe Sui Shrine",
+"ae": "4-1-39 Noe, Joto-ku, Osaka"
 },
 {
 "n": "須佐之男尊神社",
@@ -663,7 +841,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Susanoo-no-Mikoto Shrine",
+"ae": "5-15-20 Seiiku, Joto-ku, Osaka"
 },
 {
 "n": "諏訪神社",
@@ -672,7 +852,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Suwa Shrine",
+"ae": "2-15-16 Suwa, Joto-ku, Osaka"
 },
 {
 "n": "若宮八幡大神宮",
@@ -681,7 +863,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Wakamiya Hachiman Daijingu Shrine",
+"ae": "4-3-16 Gamo, Joto-ku, Osaka"
 },
 {
 "n": "稲荷神社",
@@ -690,7 +874,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Inari Shrine",
+"ae": "3-18-11 Nakahama, Joto-ku, Osaka"
 },
 {
 "n": "鶴見神社",
@@ -699,7 +885,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tsurumi Shrine",
+"ae": "3-13-76 Tsurumi, Tsurumi-ku, Osaka"
 },
 {
 "n": "阿遅速雄神社",
@@ -708,7 +896,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ajihayao Shrine",
+"ae": "3-31-18 Hanaten-Higashi, Tsurumi-ku, Osaka"
 },
 {
 "n": "比枝神社",
@@ -717,7 +907,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hie Shrine",
+"ae": "5-5-23 Imazu-Naka, Tsurumi-ku, Osaka"
 },
 {
 "n": "八幡神社",
@@ -726,7 +918,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hachiman Shrine",
+"ae": "2-4-41 Morokuchi, Tsurumi-ku, Osaka"
 },
 {
 "n": "八幡宮",
@@ -735,7 +929,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hachimangu Shrine",
+"ae": "2-8-25 Yokozutsumi, Tsurumi-ku, Osaka"
 },
 {
 "n": "大神社",
@@ -744,7 +940,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Okami Shrine",
+"ae": "1-18-17 Mattada-Omiya, Tsurumi-ku, Osaka"
 },
 {
 "n": "古宮神社",
@@ -753,7 +951,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Furumiya Shrine",
+"ae": "4-16-20 Hama, Tsurumi-ku, Osaka"
 },
 {
 "n": "大隅神社",
@@ -762,7 +962,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Osumi Shrine",
+"ae": "5-14-81 Ogiri, Higashiyodogawa-ku, Osaka"
 },
 {
 "n": "大隅神社御旅所",
@@ -771,7 +973,10 @@ var SHRINES = [
 "r": "大隅神社の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Osumi Shrine Otabisho (procession rest site)",
+"ae": "Itakano, Higashiyodogawa-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "大宮",
@@ -780,7 +985,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Omiya Shrine",
+"ae": "3-2-2 Daido-Minami, Higashiyodogawa-ku, Osaka"
 },
 {
 "n": "菅原天満宮",
@@ -789,7 +996,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Sugawara Tenmangu Shrine",
+"ae": "2-3-27 Sugawara, Higashiyodogawa-ku, Osaka"
 },
 {
 "n": "松山神社",
@@ -798,7 +1007,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Matsuyama Shrine",
+"ae": "4-15-38 Komatsu, Higashiyodogawa-ku, Osaka"
 },
 {
 "n": "春日神社",
@@ -807,7 +1018,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kasuga Shrine",
+"ae": "2-20-15 Kami-Shinjo, Higashiyodogawa-ku, Osaka"
 },
 {
 "n": "柴島神社",
@@ -816,7 +1029,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kunijima Shrine",
+"ae": "3-7-30 Kunijima, Higashiyodogawa-ku, Osaka"
 },
 {
 "n": "中島惣社",
@@ -825,7 +1040,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Nakajima Sosha Shrine",
+"ae": "4-9-41 Higashi-Nakajima, Higashiyodogawa-ku, Osaka"
 },
 {
 "n": "生國魂神社",
@@ -834,7 +1051,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "神武天皇の即位前ごろ（社伝）",
-"m": ""
+"m": "",
+"ne": "Ikukunitama Shrine",
+"ae": "13-9 Ikutamacho, Tennoji-ku, Osaka",
+"ce": "Before the accession of Emperor Jimmu (shrine tradition)"
 },
 {
 "n": "久保神社",
@@ -843,7 +1063,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kubo Shrine",
+"ae": "2-5-14 Katsuyama, Tennoji-ku, Osaka"
 },
 {
 "n": "大江神社",
@@ -852,7 +1074,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Oe Shrine",
+"ae": "5-40 Yuhigaokacho, Tennoji-ku, Osaka"
 },
 {
 "n": "河堀稲生神社",
@@ -861,7 +1085,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "景行天皇の時代（伝承）",
-"m": ""
+"m": "",
+"ne": "Kobore Inari Shrine",
+"ae": "3-7-3 Daido, Tennoji-ku, Osaka",
+"ce": "Reign of Emperor Keiko (traditional account)"
 },
 {
 "n": "東高津宮",
@@ -870,7 +1097,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Higashi-Kozu-gu Shrine",
+"ae": "4-8 Higashi-Kozucho, Tennoji-ku, Osaka"
 },
 {
 "n": "安井神社",
@@ -879,7 +1108,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yasui Shrine",
+"ae": "1-3-24 Osaka, Tennoji-ku, Osaka"
 },
 {
 "n": "五條宮",
@@ -888,7 +1119,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Gojo-no-miya Shrine",
+"ae": "24-9 Shinpoincho, Tennoji-ku, Osaka"
 },
 {
 "n": "三光神社",
@@ -897,7 +1130,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "反正天皇の時代（伝承）",
-"m": ""
+"m": "",
+"ne": "Sanko Shrine",
+"ae": "14-90 Tamatsukuri-Honmachi, Tennoji-ku, Osaka",
+"ce": "Reign of Emperor Hanzei (traditional account)"
 },
 {
 "n": "堀越神社",
@@ -906,7 +1142,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "推古天皇の時代（聖徳太子が創建）",
-"m": ""
+"m": "",
+"ne": "Horikoshi Shrine",
+"ae": "1-8 Chausuyamacho, Tennoji-ku, Osaka",
+"ce": "Reign of Empress Suiko (founded by Prince Shotoku)"
 },
 {
 "n": "清見原神社",
@@ -915,7 +1154,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kiyomihara Shrine",
+"ae": "2-24-35 Shoji, Ikuno-ku, Osaka"
 },
 {
 "n": "巽神社",
@@ -924,7 +1165,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tatsumi Shrine",
+"ae": "3-17-19 Tatsumi-Minami, Ikuno-ku, Osaka"
 },
 {
 "n": "御幸森天神宮",
@@ -933,7 +1176,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Miyukimori Tenjingu Shrine",
+"ae": "3-10-5 Momodani, Ikuno-ku, Osaka"
 },
 {
 "n": "田島神社",
@@ -942,7 +1187,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tajima Shrine",
+"ae": "3-5-34 Tajima, Ikuno-ku, Osaka"
 },
 {
 "n": "生野神社",
@@ -951,7 +1198,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ikuno Shrine",
+"ae": "1-2-27 Shariji, Ikuno-ku, Osaka"
 },
 {
 "n": "生野八坂神社",
@@ -960,7 +1209,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ikuno Yasaka Shrine",
+"ae": "4-7-11 Ikuno-Higashi, Ikuno-ku, Osaka"
 },
 {
 "n": "彌栄神社",
@@ -969,7 +1220,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Iyasaka Shrine",
+"ae": "2-16-22 Momodani, Ikuno-ku, Osaka"
 },
 {
 "n": "今宮戎神社",
@@ -978,7 +1231,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Imamiya Ebisu Shrine",
+"ae": "1-6-10 Ebisu-Nishi, Naniwa-ku, Osaka"
 },
 {
 "n": "難波八阪神社",
@@ -987,7 +1242,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Namba Yasaka Shrine",
+"ae": "2-9-19 Motomachi, Naniwa-ku, Osaka"
 },
 {
 "n": "浪速神社",
@@ -996,7 +1253,11 @@ var SHRINES = [
 "r": "坐摩神社の境外末社",
 "d": "",
 "c": "",
-"m": "坐摩大神・猿田彦大神"
+"m": "坐摩大神・猿田彦大神",
+"ne": "Naniwa Shrine",
+"ae": "3-10-23 Naniwa-Nishi, Naniwa-ku, Osaka",
+"re": "Off-site auxiliary shrine of {P}",
+"me": "Ikasuri-no-Okami and Sarutahiko-no-Okami"
 },
 {
 "n": "敷津松之宮",
@@ -1005,7 +1266,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shikitsu Matsunomiya Shrine",
+"ae": "1-2-12 Shikitsu-Nishi, Naniwa-ku, Osaka"
 },
 {
 "n": "敷津松之宮西成旅所",
@@ -1014,7 +1277,10 @@ var SHRINES = [
 "r": "敷津松之宮の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shikitsu Matsunomiya Nishinari Tabisho (procession rest site)",
+"ae": "Matsu, Nishinari-ku, Osaka (street number unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "廣田神社",
@@ -1023,7 +1289,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hirota Shrine",
+"ae": "2-4-14 Nipponbashi-Nishi, Naniwa-ku, Osaka"
 },
 {
 "n": "赤手拭稲荷神社",
@@ -1032,7 +1300,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Akatenugui Inari Shrine",
+"ae": "2-6-26 Inari, Naniwa-ku, Osaka"
 },
 {
 "n": "生根神社",
@@ -1041,7 +1311,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ikune Shrine",
+"ae": "2-1-10 Tamade-Nishi, Nishinari-ku, Osaka"
 },
 {
 "n": "天神ノ森天満宮",
@@ -1050,7 +1322,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tenjin-no-Mori Tenmangu Shrine",
+"ae": "2-3-19 Kishinosato-Higashi, Nishinari-ku, Osaka"
 },
 {
 "n": "津守神社",
@@ -1059,7 +1333,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Tsumori Shrine",
+"ae": "3-4-1 Tsumori, Nishinari-ku, Osaka"
 },
 {
 "n": "泉尾神社",
@@ -1068,7 +1344,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Izuo Shrine",
+"ae": "2-17-8 Izuo, Taisho-ku, Osaka"
 },
 {
 "n": "八阪神社",
@@ -1077,7 +1355,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yasaka Shrine",
+"ae": "6-14-12 Sangenya-Higashi, Taisho-ku, Osaka"
 },
 {
 "n": "八坂神社",
@@ -1086,7 +1366,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yasaka Shrine",
+"ae": "2-7-18 Sangenya-Higashi, Taisho-ku, Osaka"
 },
 {
 "n": "南恩加島天満宮",
@@ -1095,7 +1377,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Minami-Onkajima Tenmangu Shrine",
+"ae": "1-7-13 Kobayashi-Nishi, Taisho-ku, Osaka"
 },
 {
 "n": "産土神社",
@@ -1104,7 +1388,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ubusuna Shrine",
+"ae": "1-7-13 Kobayashi-Nishi, Taisho-ku, Osaka"
 },
 {
 "n": "神明神社",
@@ -1113,7 +1399,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shinmei Shrine",
+"ae": "2-7-29 Tsurumachi, Taisho-ku, Osaka"
 },
 {
 "n": "阿倍王子神社",
@@ -1122,7 +1410,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Abeoji Shrine",
+"ae": "9-4 Abeno-Motomachi, Abeno-ku, Osaka"
 },
 {
 "n": "阿倍晴明神社",
@@ -1131,7 +1421,12 @@ var SHRINES = [
 "r": "阿倍王子神社の末社",
 "d": "",
 "c": "1007年（社伝）",
-"m": "安倍晴明"
+"m": "安倍晴明",
+"ne": "Abe-no-Seimei Shrine",
+"ae": "5-16 Abeno-Motomachi, Abeno-ku, Osaka",
+"re": "Auxiliary shrine of {P}",
+"ce": "1007 (shrine tradition)",
+"me": "Abe no Seimei"
 },
 {
 "n": "阿倍野神社",
@@ -1140,7 +1435,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Abeno Shrine",
+"ae": "3-7-20 Kitabatake, Abeno-ku, Osaka"
 },
 {
 "n": "杭全神社",
@@ -1149,7 +1446,10 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "862年（貞観4年）",
-"m": ""
+"m": "",
+"ne": "Kumata Shrine",
+"ae": "2-1-67 Hirano-Miyamachi, Hirano-ku, Osaka",
+"ce": "862 (Jogan 4)"
 },
 {
 "n": "赤留比売命神社",
@@ -1158,7 +1458,13 @@ var SHRINES = [
 "r": "杭全神社の境外末社（かつては住吉大社の末社）",
 "d": "",
 "c": "不詳",
-"m": "赤留比売命"
+"m": "赤留比売命",
+"ne": "Akaruhime-no-Mikoto Shrine",
+"ae": "2-11 Hirano-Higashi, Hirano-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)",
+"re": "Off-site auxiliary shrine of {P} (formerly an auxiliary shrine of Sumiyoshi Taisha)",
+"ce": "Unknown",
+"me": "Akaruhime-no-Mikoto"
 },
 {
 "n": "旭神社",
@@ -1167,7 +1473,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Asahi Shrine",
+"ae": "1-17-30 Kami-Shokakuji, Hirano-ku, Osaka"
 },
 {
 "n": "志紀長吉神社",
@@ -1176,7 +1484,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shiki Nagayoshi Shrine",
+"ae": "2-8-23 Nagayoshi-Nagahara, Hirano-ku, Osaka"
 },
 {
 "n": "菅原神社",
@@ -1185,7 +1495,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Sugawara Shrine",
+"ae": "1-5-17 Kami-Kurazukuri, Hirano-ku, Osaka"
 },
 {
 "n": "瓜破天神社",
@@ -1194,7 +1506,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Uriwari Tenjin Shrine",
+"ae": "5-4-19 Uriwari, Hirano-ku, Osaka"
 },
 {
 "n": "産土神社",
@@ -1203,7 +1517,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ubusuna Shrine",
+"ae": "6-10-14 Nagayoshi-Deto, Hirano-ku, Osaka"
 },
 {
 "n": "川辺八幡神社",
@@ -1212,7 +1528,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kawabe Hachiman Shrine",
+"ae": "1-4-38 Nagayoshi-Kawabe, Hirano-ku, Osaka"
 },
 {
 "n": "天照皇大神社",
@@ -1221,7 +1539,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Amaterasu Kotai Shrine",
+"ae": "4-4-318 Nagayoshi-Deto, Hirano-ku, Osaka"
 },
 {
 "n": "赤坂神社",
@@ -1230,7 +1550,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Akasaka Shrine",
+"ae": "1-14-24 Nagayoshi-Rokutan, Hirano-ku, Osaka"
 },
 {
 "n": "新家天満宮",
@@ -1239,7 +1561,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shinya Tenmangu Shrine",
+"ae": "5-3-25 Kami-Minami, Hirano-ku, Osaka"
 },
 {
 "n": "式内楯原神社",
@@ -1248,7 +1572,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shikinai Tatehara Shrine",
+"ae": "6-1-38 Kire, Hirano-ku, Osaka"
 },
 {
 "n": "八坂神社",
@@ -1257,7 +1583,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yasaka Shrine",
+"ae": "2-1-21 Kire-Higashi, Hirano-ku, Osaka"
 },
 {
 "n": "山阪神社",
@@ -1266,7 +1594,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yamasaka Shrine",
+"ae": "2-19-23 Yamasaka, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "桑津天神社",
@@ -1275,7 +1605,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kuwazu Tenjin Shrine",
+"ae": "3-4-17 Kuwazu, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "阿麻美許曽神社",
@@ -1284,7 +1616,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Amamikoso Shrine",
+"ae": "7-6-18 Yada, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "素盞嗚尊神社",
@@ -1293,7 +1627,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Susanoo-no-Mikoto Shrine",
+"ae": "4-5-22 Takaai, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "湯里住吉神社",
@@ -1302,7 +1638,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Yuzato Sumiyoshi Shrine",
+"ae": "4-17-14 Yuzato, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "中臣須牟地神社",
@@ -1311,7 +1649,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Nakatomi Sumuchi Shrine",
+"ae": "2-9-20 Suminodo-Yada, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "榎神社",
@@ -1320,7 +1660,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Enoki Shrine",
+"ae": "1-9-20 Kita-Tanabe, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "中井神社",
@@ -1329,7 +1671,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Nakai Shrine",
+"ae": "2-3-58 Harinakano, Higashisumiyoshi-ku, Osaka"
 },
 {
 "n": "住吉大社",
@@ -1338,7 +1682,12 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "不明（686年に「住吉大神」の記録）",
-"m": "住吉三神（底筒男命・中筒男命・表筒男命）と神功皇后"
+"m": "住吉三神（底筒男命・中筒男命・表筒男命）と神功皇后",
+"ne": "Sumiyoshi Taisha",
+"ae": "2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Myojin Taisha",
+"ce": "Unknown (the Sumiyoshi deities are recorded in 686)",
+"me": "The three Sumiyoshi deities (Sokotsutsu-no-O, Nakatsutsu-no-O and Uwatsutsu-no-O) and Empress Jingu"
 },
 {
 "n": "宿院頓宮",
@@ -1347,7 +1696,10 @@ var SHRINES = [
 "r": "住吉大社の行宮（御旅所）",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Shukuin Tongu (temporary shrine of Sumiyoshi Taisha)",
+"ae": "2-1-6 Shukuincho-Higashi, Sakai-ku, Sakai City",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "生根神社",
@@ -1356,7 +1708,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Ikune Shrine",
+"ae": "2-3-15 Sumiyoshi, Sumiyoshi-ku, Osaka"
 },
 {
 "n": "止止呂支比賣命神社",
@@ -1365,7 +1719,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Todorokihime-no-Mikoto Shrine",
+"ae": "1-10-4 Sawanocho, Sumiyoshi-ku, Osaka"
 },
 {
 "n": "神須牟地神社",
@@ -1374,7 +1730,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kamisumuchi Shrine",
+"ae": "2-1-4 Nagai-Nishi, Sumiyoshi-ku, Osaka"
 },
 {
 "n": "保利神社",
@@ -1383,7 +1741,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Hori Shrine",
+"ae": "1-14-17 Nagai-Higashi, Sumiyoshi-ku, Osaka"
 },
 {
 "n": "大依羅神社",
@@ -1392,7 +1752,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Oyosami Shrine",
+"ae": "2-18-16 Niwai, Sumiyoshi-ku, Osaka"
 },
 {
 "n": "大阪護國神社",
@@ -1401,7 +1763,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Osaka Gokoku Shrine",
+"ae": "1-1-77 Minami-Kagaya, Suminoe-ku, Osaka"
 },
 {
 "n": "高崎神社",
@@ -1410,7 +1774,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Takasaki Shrine",
+"ae": "4-15-3 Minami-Kagaya, Suminoe-ku, Osaka"
 },
 {
 "n": "加賀屋天満宮",
@@ -1419,7 +1785,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Kagaya Tenmangu Shrine",
+"ae": "5-2-4 Kita-Kagaya, Suminoe-ku, Osaka"
 },
 {
 "n": "高砂神社",
@@ -1428,6 +1796,9 @@ var SHRINES = [
 "r": "",
 "d": "",
 "c": "",
-"m": ""
+"m": "",
+"ne": "Takasago Shrine",
+"ae": "3-14-12 Kitajima, Suminoe-ku, Osaka"
 }
 ];
+var WARD_EN = {"中央区": "Chuo-ku", "西区": "Nishi-ku", "東成区": "Higashinari-ku", "港区": "Minato-ku", "此花区": "Konohana-ku", "北区": "Kita-ku", "福島区": "Fukushima-ku", "淀川区": "Yodogawa-ku", "西淀川区": "Nishiyodogawa-ku", "都島区": "Miyakojima-ku", "旭区": "Asahi-ku", "城東区": "Joto-ku", "鶴見区": "Tsurumi-ku", "東淀川区": "Higashiyodogawa-ku", "天王寺区": "Tennoji-ku", "生野区": "Ikuno-ku", "浪速区": "Naniwa-ku", "西成区": "Nishinari-ku", "大正区": "Taisho-ku", "阿倍野区": "Abeno-ku", "平野区": "Hirano-ku", "東住吉区": "Higashisumiyoshi-ku", "住吉区": "Sumiyoshi-ku", "住之江区": "Suminoe-ku", "堺市堺区": "Sakai-ku, Sakai City"};
