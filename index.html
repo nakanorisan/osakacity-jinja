@@ -7,12 +7,14 @@
 <style>
 :root{--paper:#f7f4ec;--ink:#1d1b16;--muted:#6b655a;--rule:#c9c3b3;--red:#a1281f;--blue:#2d5d7b;--green:#2f6b3f}
 *{box-sizing:border-box}
-body{margin:0;background:#e9e5d8;color:var(--ink);font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","MS PMincho",serif;line-height:1.7}
+body{margin:0;background:#e9e5d8;color:var(--ink);font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","MS PMincho",Georgia,"Times New Roman",serif;line-height:1.7}
 .sheet{max-width:1080px;margin:0 auto;background:var(--paper);padding:20px 28px 40px;min-height:100vh}
 .masthead{text-align:center;border-top:4px double var(--ink);border-bottom:1px solid var(--ink);padding:6px 0 10px}
-.masthead .meta{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:4px}
+.masthead .meta{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:4px}
+.lang button{font:inherit;font-size:.8rem;padding:1px 10px;border:1px solid var(--muted);background:transparent;color:var(--muted);cursor:pointer;margin-left:4px}
+.lang button.on{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .masthead h1{margin:8px 0 0;font-size:2.6rem;letter-spacing:.12em;font-weight:700}
-.masthead .sub{margin:0;font-size:.9rem;color:var(--muted);letter-spacing:.2em}
+.masthead h1.en{letter-spacing:.04em;font-size:2.3rem}
 .controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
 .chips button{font:inherit;font-size:.9rem;padding:3px 14px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
@@ -28,59 +30,82 @@ body{margin:0;background:#e9e5d8;color:var(--ink);font-family:"Hiragino Mincho P
 .card{display:inline-block;width:100%;break-inside:avoid;padding:8px 0 12px;border-bottom:1px solid var(--rule);margin:0 0 6px;transition:background .4s}
 .card.flash{background:#fff3c4}
 .card h3{margin:0 0 4px;font-size:1.25rem;font-weight:700;line-height:1.4}
+.jpname{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-size:.85rem;color:var(--muted);margin:-2px 0 4px}
 .tags{margin-bottom:4px}
-.tag{display:inline-block;font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:.72rem;border:1px solid;padding:0 6px;margin:0 6px 4px 0;line-height:1.6}
+.tag{display:inline-block;font-family:"Hiragino Sans","Yu Gothic",Arial,sans-serif;font-size:.72rem;border:1px solid;padding:0 6px;margin:0 6px 4px 0;line-height:1.6}
 .tag a{color:inherit}
 .tag.shiki{color:var(--red)}
 .tag.matsu{color:var(--blue)}
 .tag.gyogu{color:var(--green)}
-.card dl{display:grid;grid-template-columns:4.2em 1fr;gap:1px 8px;margin:4px 0;font-size:.9rem}
+.card dl{display:grid;grid-template-columns:4.6em 1fr;gap:1px 8px;margin:4px 0;font-size:.9rem}
+.en-mode .card dl{grid-template-columns:5.2em 1fr}
 .card dt{color:var(--muted)}
 .card dd{margin:0}
+.jpaddr{display:block;font-size:.8rem;color:var(--muted)}
 .desc{margin:6px 0 0;font-size:.92rem}
 .rels{margin:6px 0 0;font-size:.85rem;color:var(--muted)}
 .rels a{color:var(--ink)}
 .empty{padding:40px 0;text-align:center;color:var(--muted)}
 footer{margin-top:30px;padding-top:10px;border-top:1px solid var(--ink);font-size:.8rem;color:var(--muted)}
-@media(max-width:600px){.sheet{padding:14px 14px 30px}.masthead h1{font-size:2rem}}
+@media(max-width:600px){.sheet{padding:14px 14px 30px}.masthead h1{font-size:2rem}.masthead h1.en{font-size:1.6rem}}
 </style>
 </head>
 <body>
-<div class="sheet">
+<div class="sheet" id="sheet">
 <header class="masthead">
-<div class="meta"><span id="today"></span><span>試作版</span></div>
-<h1>大阪市神社検索</h1>
+<div class="meta"><span><span id="today"></span>　<span id="proto"></span></span><span class="lang" id="lang"><button type="button" data-l="ja">日本語</button><button type="button" data-l="en">English</button></span></div>
+<h1 id="title"></h1>
 </header>
 <section class="controls">
 <div class="chips" id="chips">
-<button type="button" data-f="all" class="on">すべて</button>
-<button type="button" data-f="shiki">式内社</button>
-<button type="button" data-f="matsu">末社</button>
-<button type="button" data-f="gyogu">行宮</button>
+<button type="button" data-f="all" class="on"></button>
+<button type="button" data-f="shiki"></button>
+<button type="button" data-f="matsu"></button>
+<button type="button" data-f="gyogu"></button>
 </div>
-<label>区 <select id="ward"></select></label>
-<input id="q" type="search" placeholder="神社名、祭神、住所で探す">
+<label><span id="wardLabel"></span> <select id="ward"></select></label>
+<input id="q" type="search">
 </section>
 <p id="count"></p>
 <main id="paper"></main>
-<footer>住所は大阪府神社庁などの公開情報をもとにしています。創建や主祭神は調査中のため、空欄の項目があります。</footer>
+<footer id="foot"></footer>
 </div>
 <script src="osaka-data.js"></script>
 <script>
 (function(){
+var T={
+ja:{title:"大阪市神社検索",proto:"試作版",all:"すべて",shiki:"式内社",matsu:"末社",gyogu:"行宮",allWards:"すべての区",ward:"区",ph:"神社名、祭神、住所で探す",addr:"住所",found:"創建",deity:"主祭神",rel:"関連：",
+count:function(a,b){return a+"件を表示（全"+b+"件）";},n:function(k){return k+"件";},
+empty:"該当する神社がありません。条件を変えてみてください。",
+foot:"住所は大阪府神社庁などの公開情報をもとにしています。創建や主祭神は調査中のため、空欄の項目があります。",
+nodata:"データのファイル（osaka-data.js）が見つかりません。index.html と同じ場所に置いてください。",
+kindG:"行宮",kindM:"末社",
+date:function(d){return d.getFullYear()+"年"+(d.getMonth()+1)+"月"+d.getDate()+"日";}},
+en:{title:"Osaka City Shrine Search",proto:"Prototype",all:"All",shiki:"Shikinai-sha",matsu:"Auxiliary shrines",gyogu:"Angu / Otabisho",allWards:"All wards",ward:"Ward",ph:"Search by name, deity or address",addr:"Address",found:"Founded",deity:"Deity",rel:"Related: ",
+count:function(a,b){return "Showing "+a+" of "+b;},n:function(k){return String(k);},
+empty:"No shrines match. Try changing the filters.",
+foot:"Addresses are based on public information such as the Osaka Prefectural Shrine Agency. Founding dates and deities are still being researched, so some fields are blank. Shikinai-sha are shrines recorded in the Engishiki, a shrine register completed in 927. English names and addresses are transliterations and may differ from official spellings.",
+nodata:"The data file (osaka-data.js) was not found. Please place it in the same folder as index.html.",
+kindG:"Angu / Otabisho",kindM:"Auxiliary",
+date:function(d){return d.toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"});}}
+};
+var lang=(/[?&]lang=(ja|en)/.exec(location.search)||[])[1]||((navigator.language||"ja").toLowerCase().indexOf("ja")===0?"ja":"en");
 var paper=document.getElementById("paper");
 var count=document.getElementById("count");
-var d0=new Date();
-document.getElementById("today").textContent=d0.getFullYear()+"年"+(d0.getMonth()+1)+"月"+d0.getDate()+"日";
+var sel=document.getElementById("ward");
+var qi=document.getElementById("q");
+var btns=document.querySelectorAll("#chips button");
+var lbtns=document.querySelectorAll("#lang button");
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 if(typeof SHRINES==="undefined"){
-paper.innerHTML='<p class="empty">データのファイル（osaka-data.js）が見つかりません。osaka.html と同じ場所に置いてください。</p>';
+paper.innerHTML='<p class="empty">'+T[lang].nodata+'</p>';
 return;
 }
-function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+var WE=(typeof WARD_EN!=="undefined")?WARD_EN:{};
 function wardOf(a){var m=/大阪市(.+?区)/.exec(a||"");if(m)return m[1];m=/(堺市.+?区)/.exec(a||"");return m?m[1]:"その他";}
 var items=SHRINES.map(function(d,i){
 var r=d.r||"";
-return {id:i+1,n:d.n,a:d.a||"",ward:wardOf(d.a),s:d.s||"",r:r,d:d.d||"",c:d.c||"",m:d.m||"",
+return {id:i+1,n:d.n,ne:d.ne||d.n,a:d.a||"",ae:d.ae||"",ward:wardOf(d.a),s:d.s||"",se:d.se||d.s||"",r:r,re:d.re||"",d:d.d||"",c:d.c||"",ce:d.ce||d.c||"",m:d.m||"",me:d.me||d.m||"",
 isShiki:!!d.s,isMatsu:r.indexOf("末社")>=0,isGyogu:r.indexOf("行宮")>=0,parent:null,kids:[]};
 });
 var byName={};
@@ -96,8 +121,7 @@ if(p!==it&&it.r.indexOf(names[i])===0){it.parent=p;p.kids.push(it);break;}
 var wards=[];
 items.forEach(function(it){if(wards.indexOf(it.ward)<0)wards.push(it.ward);});
 var order=wards.filter(function(w){return w.indexOf("堺市")!==0&&w!=="その他";}).concat(wards.filter(function(w){return w.indexOf("堺市")===0||w==="その他";}));
-var sel=document.getElementById("ward");
-sel.innerHTML='<option value="all">すべての区</option>'+order.map(function(w){return '<option value="'+esc(w)+'">'+esc(w)+'</option>';}).join("");
+function wname(w){return lang==="en"?(WE[w]||w):w;}
 var state={f:"all",w:"all",q:""};
 function match(it){
 if(state.f==="shiki"&&!it.isShiki)return false;
@@ -105,55 +129,81 @@ if(state.f==="matsu"&&!it.isMatsu)return false;
 if(state.f==="gyogu"&&!it.isGyogu)return false;
 if(state.w!=="all"&&it.ward!==state.w)return false;
 if(state.q){
-var hay=[it.n,it.a,it.s,it.r,it.c,it.m,it.d].join(" ").toLowerCase();
+var hay=[it.n,it.ne,it.a,it.ae,it.s,it.se,it.r,it.re,it.c,it.ce,it.m,it.me,it.d].join(" ").toLowerCase();
 if(hay.indexOf(state.q)<0)return false;
 }
 return true;
 }
+function nm(it){return lang==="en"?it.ne:it.n;}
 function card(it){
-var t="";
-if(it.s)t+='<span class="tag shiki">'+esc(it.s)+'</span>';
+var en=lang==="en",t="";
+if(it.s)t+='<span class="tag shiki">'+esc(en?it.se:it.s)+'</span>';
 if(it.r){
-var rt=esc(it.r);
+var rt;
+if(en){
+rt=esc(it.re);
+rt=rt.replace("{P}",it.parent?'<a href="#s'+it.parent.id+'">'+esc(nm(it.parent))+'</a>':"?");
+}else{
+rt=esc(it.r);
 if(it.parent){var pn=esc(it.parent.n);rt='<a href="#s'+it.parent.id+'">'+pn+'</a>'+rt.slice(pn.length);}
+}
 t+='<span class="tag '+(it.isGyogu?"gyogu":"matsu")+'">'+rt+'</span>';
 }
-var dl="";
-if(it.a)dl+='<dt>住所</dt><dd>'+esc(it.a)+'</dd>';
-if(it.c)dl+='<dt>創建</dt><dd>'+esc(it.c)+'</dd>';
-if(it.m)dl+='<dt>主祭神</dt><dd>'+esc(it.m)+'</dd>';
-var h='<article class="card" id="s'+it.id+'"><h3>'+esc(it.n)+'</h3>';
+var L=T[lang],dl="";
+if(it.a)dl+='<dt>'+L.addr+'</dt><dd>'+(en&&it.ae?esc(it.ae)+'<span class="jpaddr">'+esc(it.a)+'</span>':esc(it.a))+'</dd>';
+if(it.c)dl+='<dt>'+L.found+'</dt><dd>'+esc(en?it.ce:it.c)+'</dd>';
+if(it.m)dl+='<dt>'+L.deity+'</dt><dd>'+esc(en?it.me:it.m)+'</dd>';
+var h='<article class="card" id="s'+it.id+'"><h3>'+esc(nm(it))+'</h3>';
+if(en)h+='<div class="jpname">'+esc(it.n)+'</div>';
 if(t)h+='<div class="tags">'+t+'</div>';
 if(dl)h+='<dl>'+dl+'</dl>';
 if(it.d)h+='<p class="desc">'+esc(it.d).replace(/\n/g,"<br>")+'</p>';
 if(it.kids.length){
-h+='<p class="rels">関連：'+it.kids.map(function(k){
-return '<a href="#s'+k.id+'">'+esc(k.n)+'</a>（'+(k.isGyogu?"行宮":"末社")+'）';
-}).join("、")+'</p>';
+h+='<p class="rels">'+L.rel+it.kids.map(function(k){
+return '<a href="#s'+k.id+'">'+esc(nm(k))+'</a> ('+(k.isGyogu?L.kindG:L.kindM)+')';
+}).join(en?", ":"、")+'</p>';
 }
 return h+'</article>';
 }
 function render(){
-var html="",shown=0;
+var L=T[lang],html="",shown=0;
 order.forEach(function(w){
 var list=items.filter(function(it){return it.ward===w&&match(it);});
 if(!list.length)return;
 shown+=list.length;
-html+='<section class="ward"><h2>'+esc(w)+'<span>'+list.length+'件</span></h2><div class="cards">'+list.map(card).join("")+'</div></section>';
+html+='<section class="ward"><h2>'+esc(wname(w))+'<span>'+L.n(list.length)+'</span></h2><div class="cards">'+list.map(card).join("")+'</div></section>';
 });
-paper.innerHTML=html||'<p class="empty">該当する神社がありません。条件を変えてみてください。</p>';
-count.textContent=shown+"件を表示（全"+items.length+"件）";
+paper.innerHTML=html||'<p class="empty">'+L.empty+'</p>';
+count.textContent=L.count(shown,items.length);
 }
-var btns=document.querySelectorAll("#chips button");
 function setChip(f){
 state.f=f;
 for(var i=0;i<btns.length;i++){btns[i].className=btns[i].getAttribute("data-f")===f?"on":"";}
 }
+function applyLang(){
+var L=T[lang];
+document.documentElement.lang=lang;
+document.title=L.title+(lang==="ja"?"（"+L.proto+"）":" ("+L.proto+")");
+document.getElementById("sheet").className="sheet"+(lang==="en"?" en-mode":"");
+var h1=document.getElementById("title");h1.textContent=L.title;h1.className=lang==="en"?"en":"";
+document.getElementById("today").textContent=L.date(new Date());
+document.getElementById("proto").textContent=L.proto;
+for(var i=0;i<btns.length;i++){btns[i].textContent=L[btns[i].getAttribute("data-f")];}
+for(var j=0;j<lbtns.length;j++){lbtns[j].className=lbtns[j].getAttribute("data-l")===lang?"on":"";}
+document.getElementById("wardLabel").textContent=L.ward;
+sel.innerHTML='<option value="all">'+L.allWards+'</option>'+order.map(function(w){return '<option value="'+esc(w)+'">'+esc(wname(w))+'</option>';}).join("");
+sel.value=state.w;
+qi.placeholder=L.ph;
+document.getElementById("foot").textContent=L.foot;
+render();
+}
 for(var i=0;i<btns.length;i++){
 btns[i].addEventListener("click",function(){setChip(this.getAttribute("data-f"));render();});
 }
+for(var j=0;j<lbtns.length;j++){
+lbtns[j].addEventListener("click",function(){lang=this.getAttribute("data-l");applyLang();});
+}
 sel.addEventListener("change",function(){state.w=sel.value;render();});
-var qi=document.getElementById("q");
 qi.addEventListener("input",function(){state.q=qi.value.trim().toLowerCase();render();});
 document.addEventListener("click",function(e){
 var a=e.target.closest?e.target.closest('a[href^="#s"]'):null;
@@ -168,7 +218,7 @@ el.classList.add("flash");
 setTimeout(function(){el.classList.remove("flash");},1600);
 }
 });
-render();
+applyLang();
 })();
 </script>
 </body>
