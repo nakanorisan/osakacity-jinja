@@ -35,6 +35,7 @@ body{margin:0;background:#e9e5d8;color:var(--ink);font-family:"Hiragino Mincho P
 .tag{display:inline-block;font-family:"Hiragino Sans","Yu Gothic",Arial,sans-serif;font-size:.72rem;border:1px solid;padding:0 6px;margin:0 6px 4px 0;line-height:1.6}
 .tag a{color:inherit}
 .tag.shiki{color:var(--red)}
+.tag.kokushi{color:#6a3d9a}
 .tag.matsu{color:var(--blue)}
 .tag.gyogu{color:var(--green)}
 .card dl{display:grid;grid-template-columns:4.6em 1fr;gap:1px 8px;margin:4px 0;font-size:.9rem}
@@ -60,6 +61,7 @@ footer{margin-top:30px;padding-top:10px;border-top:1px solid var(--ink);font-siz
 <div class="chips" id="chips">
 <button type="button" data-f="all" class="on"></button>
 <button type="button" data-f="shiki"></button>
+<button type="button" data-f="kokushi"></button>
 <button type="button" data-f="matsu"></button>
 <button type="button" data-f="gyogu"></button>
 </div>
@@ -74,17 +76,17 @@ footer{margin-top:30px;padding-top:10px;border-top:1px solid var(--ink);font-siz
 <script>
 (function(){
 var T={
-ja:{title:"大阪市神社検索",proto:"試作版",all:"すべて",shiki:"式内社",matsu:"末社",gyogu:"行宮",allWards:"すべての区",ward:"区",ph:"神社名、祭神、住所で探す",addr:"住所",found:"創建",deity:"主祭神",rel:"関連：",
+ja:{title:"大阪市神社検索",proto:"試作版",all:"すべて",shiki:"式内社",kokushi:"国史見在社",matsu:"末社・摂社",gyogu:"行宮",allWards:"すべての区",ward:"区",ph:"神社名、祭神、住所で探す",addr:"住所",found:"創建",deity:"主祭神",rel:"関連：",
 count:function(a,b){return a+"件を表示（全"+b+"件）";},n:function(k){return k+"件";},
 empty:"該当する神社がありません。条件を変えてみてください。",
-foot:"住所は大阪府神社庁などの公開情報をもとにしています。創建や主祭神は調査中のため、空欄の項目があります。",
+foot:"住所は大阪府神社庁などの公開情報をもとにしています。創建や主祭神は調査中のため、空欄の項目があります。国史見在社は、六国史に載るが延喜式に載らない神社です。",
 nodata:"データのファイル（osaka-data.js）が見つかりません。index.html と同じ場所に置いてください。",
 kindG:"行宮",kindM:"末社",
 date:function(d){return d.getFullYear()+"年"+(d.getMonth()+1)+"月"+d.getDate()+"日";}},
-en:{title:"Osaka City Shrine Search",proto:"Prototype",all:"All",shiki:"Shikinai-sha",matsu:"Auxiliary shrines",gyogu:"Angu / Otabisho",allWards:"All wards",ward:"Ward",ph:"Search by name, deity or address",addr:"Address",found:"Founded",deity:"Deity",rel:"Related: ",
+en:{title:"Osaka City Shrine Search",proto:"Prototype",all:"All",shiki:"Shikinai-sha",kokushi:"Kokushi-genzaisha",matsu:"Auxiliary shrines",gyogu:"Angu / Otabisho",allWards:"All wards",ward:"Ward",ph:"Search by name, deity or address",addr:"Address",found:"Founded",deity:"Deity",rel:"Related: ",
 count:function(a,b){return "Showing "+a+" of "+b;},n:function(k){return String(k);},
 empty:"No shrines match. Try changing the filters.",
-foot:"Addresses are based on public information such as the Osaka Prefectural Shrine Agency. Founding dates and deities are still being researched, so some fields are blank. Shikinai-sha are shrines recorded in the Engishiki, a shrine register completed in 927. English names and addresses are transliterations and may differ from official spellings.",
+foot:"Addresses are based on public information such as the Osaka Prefectural Shrine Agency. Founding dates and deities are still being researched, so some fields are blank. Shikinai-sha are shrines recorded in the Engishiki, a shrine register completed in 927. Kokushi-genzaisha are shrines named in the Six National Histories but not listed in the Engishiki. English names and addresses are transliterations and may differ from official spellings.",
 nodata:"The data file (osaka-data.js) was not found. Please place it in the same folder as index.html.",
 kindG:"Angu / Otabisho",kindM:"Auxiliary",
 date:function(d){return d.toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"});}}
@@ -106,7 +108,7 @@ function wardOf(a){var m=/大阪市(.+?区)/.exec(a||"");if(m)return m[1];m=/(�
 var items=SHRINES.map(function(d,i){
 var r=d.r||"";
 return {id:i+1,n:d.n,ne:d.ne||d.n,a:d.a||"",ae:d.ae||"",ward:wardOf(d.a),s:d.s||"",se:d.se||d.s||"",r:r,re:d.re||"",d:d.d||"",c:d.c||"",ce:d.ce||d.c||"",m:d.m||"",me:d.me||d.m||"",
-isShiki:!!d.s,isMatsu:r.indexOf("末社")>=0,isGyogu:r.indexOf("行宮")>=0,parent:null,kids:[]};
+isShiki:/^式内社/.test(d.s||""),isKokushi:/^国史見在社/.test(d.s||""),isMatsu:/末社|摂社|境内社/.test(r),isGyogu:r.indexOf("行宮")>=0,parent:null,kids:[]};
 });
 var byName={};
 items.forEach(function(it){if(!(it.n in byName))byName[it.n]=it;});
@@ -125,6 +127,7 @@ function wname(w){return lang==="en"?(WE[w]||w):w;}
 var state={f:"all",w:"all",q:""};
 function match(it){
 if(state.f==="shiki"&&!it.isShiki)return false;
+if(state.f==="kokushi"&&!it.isKokushi)return false;
 if(state.f==="matsu"&&!it.isMatsu)return false;
 if(state.f==="gyogu"&&!it.isGyogu)return false;
 if(state.w!=="all"&&it.ward!==state.w)return false;
@@ -135,9 +138,14 @@ if(hay.indexOf(state.q)<0)return false;
 return true;
 }
 function nm(it){return lang==="en"?it.ne:it.n;}
+function kindOf(k,L){
+if(k.isGyogu)return L.kindG;
+if(lang==="ja"){if(k.r.indexOf("境内社")>=0)return "境内社";if(k.r.indexOf("摂社")>=0)return "摂社";return "末社";}
+return L.kindM;
+}
 function card(it){
 var en=lang==="en",t="";
-if(it.s)t+='<span class="tag shiki">'+esc(en?it.se:it.s)+'</span>';
+if(it.s)t+='<span class="tag '+(it.isKokushi?"kokushi":"shiki")+'">'+esc(en?it.se:it.s)+'</span>';
 if(it.r){
 var rt;
 if(en){
@@ -160,7 +168,7 @@ if(dl)h+='<dl>'+dl+'</dl>';
 if(it.d)h+='<p class="desc">'+esc(it.d).replace(/\n/g,"<br>")+'</p>';
 if(it.kids.length){
 h+='<p class="rels">'+L.rel+it.kids.map(function(k){
-return '<a href="#s'+k.id+'">'+esc(nm(k))+'</a> ('+(k.isGyogu?L.kindG:L.kindM)+')';
+return '<a href="#s'+k.id+'">'+esc(nm(k))+'</a> ('+kindOf(k,L)+')';
 }).join(en?", ":"、")+'</p>';
 }
 return h+'</article>';
