@@ -19,13 +19,14 @@ var SHRINES = [
 "a": "大阪市中央区石町（番地は未確認）",
 "s": "",
 "r": "坐摩神社の行宮（御旅所）",
-"k": "",
+"k": "史跡（窪津王子跡）",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Ikasuri Shrine Angu (temporary shrine)",
 "ae": "Ishimachi, Chuo-ku, Osaka (street number unconfirmed)",
-"re": "Angu / Otabisho (temporary shrine) of {P}"
+"re": "Angu / Otabisho (temporary shrine) of {P}",
+"ke": "Historic site (site of Kubotsu Oji)"
 },
 {
 "n": "高津宮",
@@ -127,6 +128,19 @@ var SHRINES = [
 "ne": "Goryo Shrine",
 "ae": "4-4-3 Awajimachi, Chuo-ku, Osaka",
 "se": "Kokushi-kenzaisha (named in the Six National Histories)"
+},
+{
+"n": "御霊神社行宮",
+"a": "大阪市（所在地は未確認）",
+"s": "",
+"r": "御霊神社の行宮（御旅所）",
+"k": "",
+"d": "",
+"c": "",
+"m": "",
+"ne": "Goryo Shrine Angu (temporary shrine)",
+"ae": "Osaka (location unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "難波神社",
@@ -911,6 +925,19 @@ var SHRINES = [
 "m": "",
 "ne": "Kotai Jingu Shrine",
 "ae": "2-12-31 Imafuku-Minami, Joto-ku, Osaka"
+},
+{
+"n": "皇大神宮行宮",
+"a": "大阪市（所在地は未確認）",
+"s": "",
+"r": "皇大神宮の行宮（御旅所）",
+"k": "",
+"d": "",
+"c": "",
+"m": "",
+"ne": "Kotai Jingu Shrine Angu (temporary shrine)",
+"ae": "Osaka (location unconfirmed)",
+"re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
 "n": "白山神社",
