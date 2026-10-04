@@ -74,7 +74,7 @@ footer{margin-top:30px;padding-top:10px;border-top:1px solid var(--ink);font-siz
 <main id="paper"></main>
 <footer id="foot"></footer>
 </div>
-<script src="osaka-data.js?v=20261004g"></script>
+<script src="osaka-data.js?v=20261004h"></script>
 <script>
 (function(){
 var T={
@@ -143,6 +143,7 @@ return true;
 }
 function nm(it){return lang==="en"?it.ne:it.n;}
 function kindOf(k,L){
+if(k.isShiseki&&k.isGyogu)return lang==="ja"?"行宮・史跡":"Angu / Historic site";
 if(k.isShiseki)return lang==="ja"?"史跡":"Historic site";
 if(k.isGyogu)return L.kindG;
 if(lang==="ja"){if(k.r.indexOf("境内社")>=0)return "境内社";if(k.r.indexOf("摂社")>=0)return "摂社";return "末社";}
@@ -161,7 +162,7 @@ rt=rt.replace("{P}",it.parent?'<a href="#s'+it.parent.id+'">'+esc(nm(it.parent))
 rt=esc(it.r);
 if(it.parent){var pn=esc(it.parent.n);rt='<a href="#s'+it.parent.id+'">'+pn+'</a>'+rt.slice(pn.length);}
 }
-t+='<span class="tag '+(it.isShiseki?"shiseki":(it.isGyogu?"gyogu":"matsu"))+'">'+rt+'</span>';
+t+='<span class="tag '+(it.isGyogu?"gyogu":(it.isShiseki?"shiseki":"matsu"))+'">'+rt+'</span>';
 }
 var L=T[lang],dl="";
 if(it.a)dl+='<dt>'+L.addr+'</dt><dd>'+(en&&it.ae?esc(it.ae)+'<span class="jpaddr">'+esc(it.a)+'</span>':esc(it.a))+'</dd>';
