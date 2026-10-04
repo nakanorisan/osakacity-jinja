@@ -96,13 +96,14 @@ var SHRINES = [
 {
 "n": "御霊神社",
 "a": "大阪市中央区淡路町4-4-3",
-"s": "",
+"s": "国史見在社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Goryo Shrine",
-"ae": "4-4-3 Awajimachi, Chuo-ku, Osaka"
+"ae": "4-4-3 Awajimachi, Chuo-ku, Osaka",
+"se": "Kokushi-genzaisha (named in the Six National Histories)"
 },
 {
 "n": "難波神社",
@@ -892,13 +893,14 @@ var SHRINES = [
 {
 "n": "阿遅速雄神社",
 "a": "大阪市鶴見区放出東3-31-18",
-"s": "",
+"s": "式内社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Ajihayao Shrine",
-"ae": "3-31-18 Hanaten-Higashi, Tsurumi-ku, Osaka"
+"ae": "3-31-18 Hanaten-Higashi, Tsurumi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)"
 },
 {
 "n": "比枝神社",
@@ -1047,13 +1049,14 @@ var SHRINES = [
 {
 "n": "生國魂神社",
 "a": "大阪市天王寺区生玉町13-9",
-"s": "",
+"s": "式内社（名神大）",
 "r": "",
 "d": "",
 "c": "神武天皇の即位前ごろ（社伝）",
 "m": "",
 "ne": "Ikukunitama Shrine",
 "ae": "13-9 Ikutamacho, Tennoji-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Myojin Taisha",
 "ce": "Before the accession of Emperor Jimmu (shrine tradition)"
 },
 {
@@ -1480,13 +1483,14 @@ var SHRINES = [
 {
 "n": "志紀長吉神社",
 "a": "大阪市平野区長吉長原2-8-23",
-"s": "",
+"s": "式内社（大社）",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Shiki Nagayoshi Shrine",
-"ae": "2-8-23 Nagayoshi-Nagahara, Hirano-ku, Osaka"
+"ae": "2-8-23 Nagayoshi-Nagahara, Hirano-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Grand Shrine"
 },
 {
 "n": "菅原神社",
@@ -1568,13 +1572,14 @@ var SHRINES = [
 {
 "n": "式内楯原神社",
 "a": "大阪市平野区喜連6-1-38",
-"s": "",
+"s": "式内社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Shikinai Tatehara Shrine",
-"ae": "6-1-38 Kire, Hirano-ku, Osaka"
+"ae": "6-1-38 Kire, Hirano-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)"
 },
 {
 "n": "八坂神社",
@@ -1590,13 +1595,14 @@ var SHRINES = [
 {
 "n": "山阪神社",
 "a": "大阪市東住吉区山坂2-19-23",
-"s": "",
+"s": "国史見在社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Yamasaka Shrine",
-"ae": "2-19-23 Yamasaka, Higashisumiyoshi-ku, Osaka"
+"ae": "2-19-23 Yamasaka, Higashisumiyoshi-ku, Osaka",
+"se": "Kokushi-genzaisha (named in the Six National Histories)"
 },
 {
 "n": "桑津天神社",
@@ -1612,13 +1618,14 @@ var SHRINES = [
 {
 "n": "阿麻美許曽神社",
 "a": "大阪市東住吉区矢田7-6-18",
-"s": "",
+"s": "式内社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Amamikoso Shrine",
-"ae": "7-6-18 Yada, Higashisumiyoshi-ku, Osaka"
+"ae": "7-6-18 Yada, Higashisumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)"
 },
 {
 "n": "素盞嗚尊神社",
@@ -1645,13 +1652,14 @@ var SHRINES = [
 {
 "n": "中臣須牟地神社",
 "a": "大阪市東住吉区住道矢田2-9-20",
-"s": "",
+"s": "式内社（大社）",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Nakatomi Sumuchi Shrine",
-"ae": "2-9-20 Suminodo-Yada, Higashisumiyoshi-ku, Osaka"
+"ae": "2-9-20 Suminodo-Yada, Higashisumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Grand Shrine"
 },
 {
 "n": "榎神社",
@@ -1667,13 +1675,14 @@ var SHRINES = [
 {
 "n": "中井神社",
 "a": "大阪市東住吉区針中野2-3-58",
-"s": "",
+"s": "国史見在社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Nakai Shrine",
-"ae": "2-3-58 Harinakano, Higashisumiyoshi-ku, Osaka"
+"ae": "2-3-58 Harinakano, Higashisumiyoshi-ku, Osaka",
+"se": "Kokushi-genzaisha (named in the Six National Histories)"
 },
 {
 "n": "住吉大社",
@@ -1702,37 +1711,70 @@ var SHRINES = [
 "re": "Angu / Otabisho (temporary shrine) of {P}"
 },
 {
+"n": "大海神社",
+"a": "大阪市住吉区住吉2-9-89",
+"s": "式内社",
+"r": "住吉大社の摂社",
+"d": "",
+"c": "不詳（住吉大社の創建より古いとされる）",
+"m": "豊玉彦命・豊玉姫命",
+"ne": "Oama Shrine",
+"ae": "2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)",
+"re": "Subsidiary shrine (Sessha) of {P}",
+"ce": "Unknown (said to be older than Sumiyoshi Taisha)",
+"me": "Toyotamahiko-no-Mikoto and Toyotamahime-no-Mikoto"
+},
+{
 "n": "生根神社",
 "a": "大阪市住吉区住吉2-3-15",
-"s": "",
+"s": "式内社（大社）",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Ikune Shrine",
-"ae": "2-3-15 Sumiyoshi, Sumiyoshi-ku, Osaka"
+"ae": "2-3-15 Sumiyoshi, Sumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Grand Shrine"
 },
 {
 "n": "止止呂支比賣命神社",
 "a": "大阪市住吉区沢之町1-10-4",
-"s": "",
+"s": "式内社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Todorokihime-no-Mikoto Shrine",
-"ae": "1-10-4 Sawanocho, Sumiyoshi-ku, Osaka"
+"ae": "1-10-4 Sawanocho, Sumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)"
+},
+{
+"n": "天水分豊浦命神社",
+"a": "大阪市住吉区沢之町1-10-4",
+"s": "式内社",
+"r": "止止呂支比賣命神社の境内社",
+"d": "",
+"c": "不詳",
+"m": "天水分神・奥津彦神・奥津姫神",
+"ne": "Amenomikumaritoyura-no-Mikoto Shrine",
+"ae": "1-10-4 Sawanocho, Sumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)",
+"re": "Shrine within the precincts of {P}",
+"ce": "Unknown",
+"me": "Ame-no-Mikumari-no-Kami, Okitsuhiko-no-Kami and Okitsuhime-no-Kami"
 },
 {
 "n": "神須牟地神社",
 "a": "大阪市住吉区長居西2-1-4",
-"s": "",
+"s": "式内社",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Kamisumuchi Shrine",
-"ae": "2-1-4 Nagai-Nishi, Sumiyoshi-ku, Osaka"
+"ae": "2-1-4 Nagai-Nishi, Sumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed)"
 },
 {
 "n": "保利神社",
@@ -1748,13 +1790,14 @@ var SHRINES = [
 {
 "n": "大依羅神社",
 "a": "大阪市住吉区庭井2-18-16",
-"s": "",
+"s": "式内社（名神大）",
 "r": "",
 "d": "",
 "c": "",
 "m": "",
 "ne": "Oyosami Shrine",
-"ae": "2-18-16 Niwai, Sumiyoshi-ku, Osaka"
+"ae": "2-18-16 Niwai, Sumiyoshi-ku, Osaka",
+"se": "Shikinai-sha (Engishiki-listed) · Myojin Taisha"
 },
 {
 "n": "大阪護國神社",
