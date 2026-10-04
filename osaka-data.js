@@ -6,12 +6,11 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "不明（神功皇后の創建伝承）",
+"c": "",
 "m": "坐摩大神（生井神・福井神・綱長井神・阿須波神・波比岐神）",
 "ne": "Ikasuri Shrine",
 "ae": "Watanabe 3, Kyutaromachi 4-chome, Chuo-ku, Osaka",
 "se": "Shikinai-sha (Engishiki-listed) · Grand Shrine",
-"ce": "Unknown (traditionally founded by Empress Jingu)",
 "me": "Ikasuri-no-Okami (Ikui, Fukui, Tsunagai, Asuha and Hahiki deities)"
 },
 {
@@ -62,10 +61,11 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "",
+"c": "1780年（安永9年）",
 "m": "",
 "ne": "Sukunahikona Shrine",
-"ae": "2-1-8 Doshomachi, Chuo-ku, Osaka"
+"ae": "2-1-8 Doshomachi, Chuo-ku, Osaka",
+"ce": "1780 (Anei 9)"
 },
 {
 "n": "玉造稲荷神社",
@@ -74,11 +74,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "紀元前12年（伝承）",
+"c": "",
 "m": "",
 "ne": "Tamatsukuri Inari Shrine",
-"ae": "2-3-8 Tamatsukuri, Chuo-ku, Osaka",
-"ce": "12 BC (traditional account)"
+"ae": "2-3-8 Tamatsukuri, Chuo-ku, Osaka"
 },
 {
 "n": "豊國神社",
@@ -149,11 +148,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "反正天皇の時代（伝承）",
+"c": "",
 "m": "",
 "ne": "Namba Shrine",
-"ae": "4-1-3 Bakurocho, Chuo-ku, Osaka",
-"ce": "Reign of Emperor Hanzei (traditional account)"
+"ae": "4-1-3 Bakurocho, Chuo-ku, Osaka"
 },
 {
 "n": "茨住吉神社",
@@ -186,11 +184,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "1928年（昭和3年）ごろ",
+"c": "",
 "m": "楠永大神・楠玉大神",
 "ne": "Kusunaga Shrine",
 "ae": "2-1 Utsubo-Honmachi, Nishi-ku, Osaka",
-"ce": "Around 1928 (Showa 3)",
 "me": "Kusunaga-no-Okami and Kusutama-no-Okami"
 },
 {
@@ -755,11 +752,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "842年（承和9年）（一説に1313年）",
+"c": "",
 "m": "住吉四神",
 "ne": "Owada Sumiyoshi Shrine",
 "ae": "5-20-20 Owada, Nishiyodogawa-ku, Osaka",
-"ce": "842 (Jowa 9); another account says 1313",
 "me": "The four Sumiyoshi deities"
 },
 {
@@ -769,11 +765,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "800年（資料の記載。元号と年が合わないため要確認）",
+"c": "",
 "m": "神功皇后・須佐之男命",
 "ne": "Hanakawa Shrine",
 "ae": "2-1-12 Hanakawa, Nishiyodogawa-ku, Osaka",
-"ce": "800 (as stated in a source; the era name and year do not match, to be confirmed)",
 "me": "Empress Jingu and Susanoo-no-Mikoto"
 },
 {
@@ -1200,12 +1195,11 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "神武天皇の即位前ごろ（社伝）",
+"c": "",
 "m": "",
 "ne": "Ikukunitama Shrine",
 "ae": "13-9 Ikutamacho, Tennoji-ku, Osaka",
-"se": "Shikinai-sha (Engishiki-listed) · Myojin Taisha",
-"ce": "Before the accession of Emperor Jimmu (shrine tradition)"
+"se": "Shikinai-sha (Engishiki-listed) · Myojin Taisha"
 },
 {
 "n": "久保神社",
@@ -1252,11 +1246,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "景行天皇の時代（伝承）",
+"c": "",
 "m": "",
 "ne": "Kobore Inari Shrine",
-"ae": "3-7-3 Daido, Tennoji-ku, Osaka",
-"ce": "Reign of Emperor Keiko (traditional account)"
+"ae": "3-7-3 Daido, Tennoji-ku, Osaka"
 },
 {
 "n": "東高津宮",
@@ -1301,11 +1294,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "反正天皇の時代（伝承）",
+"c": "",
 "m": "",
 "ne": "Sanko Shrine",
-"ae": "14-90 Tamatsukuri-Honmachi, Tennoji-ku, Osaka",
-"ce": "Reign of Emperor Hanzei (traditional account)"
+"ae": "14-90 Tamatsukuri-Honmachi, Tennoji-ku, Osaka"
 },
 {
 "n": "堀越神社",
@@ -1314,11 +1306,10 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "推古天皇の時代（聖徳太子が創建）",
+"c": "",
 "m": "",
 "ne": "Horikoshi Shrine",
-"ae": "1-8 Chausuyamacho, Tennoji-ku, Osaka",
-"ce": "Reign of Empress Suiko (founded by Prince Shotoku)"
+"ae": "1-8 Chausuyamacho, Tennoji-ku, Osaka"
 },
 {
 "n": "清見原神社",
@@ -1633,12 +1624,11 @@ var SHRINES = [
 "r": "阿倍王子神社の末社",
 "k": "",
 "d": "",
-"c": "1007年（社伝）",
+"c": "",
 "m": "安倍晴明",
 "ne": "Abe-no-Seimei Shrine",
 "ae": "5-16 Abeno-Motomachi, Abeno-ku, Osaka",
 "re": "Auxiliary shrine of {P}",
-"ce": "1007 (shrine tradition)",
 "me": "Abe no Seimei"
 },
 {
@@ -1673,13 +1663,12 @@ var SHRINES = [
 "r": "杭全神社の境外末社（かつては住吉大社の末社）",
 "k": "",
 "d": "",
-"c": "不詳",
+"c": "",
 "m": "赤留比売命",
 "ne": "Akaruhime-no-Mikoto Shrine",
 "ae": "2-11 Hirano-Higashi, Hirano-ku, Osaka",
 "se": "Shikinai-sha (Engishiki-listed)",
 "re": "Off-site auxiliary shrine of {P} (formerly an auxiliary shrine of Sumiyoshi Taisha)",
-"ce": "Unknown",
 "me": "Akaruhime-no-Mikoto"
 },
 {
@@ -1923,12 +1912,11 @@ var SHRINES = [
 "r": "",
 "k": "",
 "d": "",
-"c": "不明（686年に「住吉大神」の記録）",
+"c": "",
 "m": "住吉三神（底筒男命・中筒男命・表筒男命）と神功皇后",
 "ne": "Sumiyoshi Taisha",
 "ae": "2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka",
 "se": "Shikinai-sha (Engishiki-listed) · Myojin Taisha",
-"ce": "Unknown (the Sumiyoshi deities are recorded in 686)",
 "me": "The three Sumiyoshi deities (Sokotsutsu-no-O, Nakatsutsu-no-O and Uwatsutsu-no-O) and Empress Jingu"
 },
 {
@@ -1951,13 +1939,12 @@ var SHRINES = [
 "r": "住吉大社の摂社",
 "k": "",
 "d": "",
-"c": "不詳（住吉大社の創建より古いとされる）",
+"c": "",
 "m": "豊玉彦命・豊玉姫命",
 "ne": "Oama Shrine",
 "ae": "2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka",
 "se": "Shikinai-sha (Engishiki-listed)",
 "re": "Subsidiary shrine (Sessha) of {P}",
-"ce": "Unknown (said to be older than Sumiyoshi Taisha)",
 "me": "Toyotamahiko-no-Mikoto and Toyotamahime-no-Mikoto"
 },
 {
@@ -1993,13 +1980,12 @@ var SHRINES = [
 "r": "止止呂支比賣命神社の境内社",
 "k": "",
 "d": "",
-"c": "不詳",
+"c": "",
 "m": "天水分神・奥津彦神・奥津姫神",
 "ne": "Amenomikumaritoyura-no-Mikoto Shrine",
 "ae": "1-10-4 Sawanocho, Sumiyoshi-ku, Osaka",
 "se": "Shikinai-sha (Engishiki-listed)",
 "re": "Shrine within the precincts of {P}",
-"ce": "Unknown",
 "me": "Ame-no-Mikumari-no-Kami, Okitsuhiko-no-Kami and Okitsuhime-no-Kami"
 },
 {
