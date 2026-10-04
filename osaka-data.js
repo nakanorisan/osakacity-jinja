@@ -1983,12 +1983,12 @@ var SHRINES = [
 "k": "史跡（旧社地）",
 "d": "",
 "c": "",
-"m": "天水分神・奥津彦神・奥津姫神",
+"m": "霰松原荒神",
 "ne": "Arare-matsubara Shrine",
 "ae": "2-11 Anryu, Suminoe-ku, Osaka",
 "re": "Former site of Amenomikumaritoyura-no-Mikoto Shrine (Shikinai-sha), now enshrined in {P}",
 "ke": "Historic site (former shrine site)",
-"me": "Ame-no-Mikumari-no-Kami, Okitsuhiko-no-Kami and Okitsuhime-no-Kami"
+"me": "Arare-matsubara Kojin"
 },
 {
 "n": "神須牟地神社",
