@@ -181,13 +181,14 @@ var SHRINES = [
 "n": "楠永神社",
 "a": "大阪市西区靱本町2-1",
 "s": "",
-"r": "",
+"r": "御霊神社の境外社",
 "k": "",
 "d": "",
 "c": "",
 "m": "楠永大神・楠玉大神",
 "ne": "Kusunaga Shrine",
 "ae": "2-1 Utsubo-Honmachi, Nishi-ku, Osaka",
+"re": "Off-site shrine (Keigaisha) of {P}",
 "me": "Kusunaga-no-Okami and Kusutama-no-Okami"
 },
 {
